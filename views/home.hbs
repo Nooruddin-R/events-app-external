@@ -1,10 +1,10 @@
 <ul >
   {{#events}}
     <li>
-        <h2>{{ title }}</h2>
-        <p>{{ description }}</p>
-        <p>Location: {{ location }}</p>
-        <p>Likes: {{ likes }}
+        <h2 style="color:blue;"> Title: {{ title }}</h2>
+        <p style="color:red;">Description: {{ description }}</p>
+        <p style="color:green;">Location: {{ location }}</p>
+        <p style="color:violet;">Likes: {{ likes }}
         <form method="POST" action="/event/like">
         <input type="hidden" value="{{id}}" name="id">
         <input type="submit" value="Like">
@@ -17,3 +17,5 @@
     </li>
   {{/events}}
 </ul>
+
+
